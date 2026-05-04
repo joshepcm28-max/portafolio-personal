@@ -1,43 +1,139 @@
-body {
-    font-family: 'Segoe UI';
-    background: #0f172a;
-    color: white;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+}
+
+/* HEADER */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
+/* CONTENEDOR */
 .container {
     width: 90%;
-    margin: auto;
+    max-width: 1100px;
+    margin: 40px auto;
 }
 
-.perfil {
-    text-align: center;
-    margin-bottom: 40px;
+/* TITULOS */
+.title {
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
 }
 
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
+/* CARDS */
 .card {
     background: #1e293b;
     padding: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* EFECTO HOVER PRO */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.1), transparent);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-.buttons a, .buttons button {
-    margin: 5px;
-    padding: 8px 10px;
-    background: #38bdf8;
+/* INTRO CARD */
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
-    border: none;
-    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(56,189,248,0.4);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #020617;
+    color: #94a3b8;
+}
+
+/* ANIMACIONES */
+.card {
+    animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
 }
