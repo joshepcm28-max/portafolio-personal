@@ -36,23 +36,20 @@ iframe {
 
 <body>
 
-<div class="container">
+<div class="card">
+    <h4>Semana 1</h4>
+    <p>Apache Maven y Git/GitHub</p>
 
-<h1>📘 Semana 1</h1>
+    <div class="buttons">
+        <a href="Unidad1/Semana1/tarea_semana_1.pdf" target="_blank" class="btn">👁️ Ver</a>
+        <a href="Unidad1/Semana1/tarea_semana_1.pdf" download class="btn">⬇️ Descargar</a>
+        <button onclick="subirArchivo(1)" class="btn upload">📤 Subir</button>
+    </div>
 
-<!-- VISOR PDF -->
-<h2>📄 Ver tarea</h2>
-
-<iframe src="tarea_semana_1.pdf"></iframe>
-
-<!-- SUBIDA -->
-<div class="upload">
-    <h2>📤 Subir nueva tarea</h2>
-    <input type="file">
-    <p>(Debes subir el archivo manualmente en GitHub)</p>
+    <div class="archivos">
+        <h5>📂 Mis entregas:</h5>
+        <ul id="lista1"></ul>
+    </div>
 </div>
-
-</div>
-
 </body>
 </html>
