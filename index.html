@@ -2,108 +2,142 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aula Virtual - Joshep</title>
-
+<title>Portafolio - Joshep</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- SIDEBAR -->
-<div class="sidebar">
-    <h2>📚 Aula</h2>
-    <ul>
-        <li onclick="cargarSemana(1)">Semana 1</li>
-        <li onclick="cargarSemana(2)">Semana 2</li>
-        <li onclick="cargarSemana(3)">Semana 3</li>
-        <li onclick="cargarSemana(4)">Semana 4</li>
-        <li onclick="cargarSemana(5)">Semana 5</li>
-        <li onclick="cargarSemana(6)">Semana 6</li>
-        <li onclick="cargarSemana(7)">Semana 7</li>
-        <li onclick="cargarSemana(8)">Semana 8</li>
-    </ul>
+<div class="container">
+
+<!-- PERFIL -->
+<section class="perfil">
+    <h1>👨‍💻 Joshep Emerson Condori Moreno</h1>
+    <p>Código: S03785C | Universidad: UPLA</p>
+    <p>Estudiante de Ingeniería de Sistemas y Computación</p>
+</section>
+
+<!-- UNIDAD 1 -->
+<h2>📘 Unidad 1</h2>
+
+<div class="grid">
+
+<div class="card">
+    <h3>Semana 1</h3>
+    <p>Apache Maven y Git/GitHub</p>
+
+    <div class="buttons">
+        <a href="Unidad1/Semana1/tarea_semana_1.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad1/Semana1/tarea_semana_1.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(1)">📤 Subir</button>
+    </div>
+
+    <ul id="lista1"></ul>
 </div>
 
-<!-- CONTENIDO -->
-<div class="main">
+<div class="card">
+    <h3>Semana 2</h3>
+    <p>Métodos</p>
 
-    <div id="contenido">
-        <h1>Bienvenido</h1>
-        <p>Selecciona una semana en el menú</p>
+    <div class="buttons">
+        <a href="Unidad1/Semana2/tarea_semana_2.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad1/Semana2/tarea_semana_2.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(2)">📤 Subir</button>
     </div>
+
+    <ul id="lista2"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 3</h3>
+    <p>POO</p>
+
+    <div class="buttons">
+        <a href="Unidad1/Semana3/tarea_semana_3.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad1/Semana3/tarea_semana_3.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(3)">📤 Subir</button>
+    </div>
+
+    <ul id="lista3"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 4</h3>
+    <p>POO</p>
+
+    <div class="buttons">
+        <a href="Unidad1/Semana4/tarea_semana_4.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad1/Semana4/tarea_semana_4.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(4)">📤 Subir</button>
+    </div>
+
+    <ul id="lista4"></ul>
+</div>
+
+</div>
+
+<!-- UNIDAD 2 -->
+<h2>📗 Unidad 2</h2>
+
+<div class="grid">
+
+<div class="card">
+    <h3>Semana 5</h3>
+    <p>Componentes</p>
+
+    <div class="buttons">
+        <a href="Unidad2/Semana5/tarea_semana_5.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad2/Semana5/tarea_semana_5.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(5)">📤 Subir</button>
+    </div>
+
+    <ul id="lista5"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 6</h3>
+    <p>Componentes</p>
+
+    <div class="buttons">
+        <a href="Unidad2/Semana6/tarea_semana_6.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad2/Semana6/tarea_semana_6.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(6)">📤 Subir</button>
+    </div>
+
+    <ul id="lista6"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 7</h3>
+    <p>Componentes</p>
+
+    <div class="buttons">
+        <a href="Unidad2/Semana7/tarea_semana_7.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad2/Semana7/tarea_semana_7.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(7)">📤 Subir</button>
+    </div>
+
+    <ul id="lista7"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 8</h3>
+    <p>Componentes</p>
+
+    <div class="buttons">
+        <a href="Unidad2/Semana8/tarea_semana_8.pdf" target="_blank">👁️ Ver</a>
+        <a href="Unidad2/Semana8/tarea_semana_8.pdf" download>⬇️ Descargar</a>
+        <button onclick="subirArchivo(8)">📤 Subir</button>
+    </div>
+
+    <ul id="lista8"></ul>
+</div>
+
+</div>
 
 </div>
 
 <script>
-
-const data = {
-    1: {
-        titulo: "Semana 1",
-        descripcion: "Apache Maven y Git/GitHub",
-        pdf: "Unidad1/Semana1/tarea_semana_1.pdf"
-    },
-    2: {
-        titulo: "Semana 2",
-        descripcion: "Métodos",
-        pdf: "Unidad1/Semana2/tarea_semana_2.pdf"
-    },
-    3: {
-        titulo: "Semana 3",
-        descripcion: "POO",
-        pdf: "Unidad1/Semana3/tarea_semana_3.pdf"
-    },
-    4: {
-        titulo: "Semana 4",
-        descripcion: "POO",
-        pdf: "Unidad1/Semana4/tarea_semana_4.pdf"
-    },
-    5: {
-        titulo: "Semana 5",
-        descripcion: "Componentes",
-        pdf: "Unidad2/Semana5/tarea_semana_5.pdf"
-    },
-    6: {
-        titulo: "Semana 6",
-        descripcion: "Componentes",
-        pdf: "Unidad2/Semana6/tarea_semana_6.pdf"
-    },
-    7: {
-        titulo: "Semana 7",
-        descripcion: "Componentes",
-        pdf: "Unidad2/Semana7/tarea_semana_7.pdf"
-    },
-    8: {
-        titulo: "Semana 8",
-        descripcion: "Componentes",
-        pdf: "Unidad2/Semana8/tarea_semana_8.pdf"
-    }
-};
-
-function cargarSemana(num) {
-    const semana = data[num];
-
-    document.getElementById("contenido").innerHTML = `
-        <div class="card">
-            <h1>📘 ${semana.titulo}</h1>
-            <p>${semana.descripcion}</p>
-
-            <div class="buttons">
-                <a href="${semana.pdf}" target="_blank" class="btn">👁️ Ver</a>
-                <a href="${semana.pdf}" download class="btn">⬇️ Descargar</a>
-                <button onclick="subirArchivo(${num})" class="btn upload">📤 Subir</button>
-            </div>
-
-            <div class="archivos">
-                <h3>📂 Mis entregas:</h3>
-                <ul id="lista${num}"></ul>
-            </div>
-        </div>
-    `;
-
-    mostrarArchivos(num);
-}
-
 function subirArchivo(semana) {
     const input = document.createElement("input");
     input.type = "file";
@@ -124,8 +158,6 @@ function subirArchivo(semana) {
 
 function mostrarArchivos(semana) {
     const lista = document.getElementById("lista" + semana);
-    if (!lista) return;
-
     lista.innerHTML = "";
 
     let archivos = JSON.parse(localStorage.getItem("semana" + semana)) || [];
@@ -137,6 +169,11 @@ function mostrarArchivos(semana) {
     });
 }
 
+window.onload = () => {
+    for (let i = 1; i <= 8; i++) {
+        mostrarArchivos(i);
+    }
+};
 </script>
 
 </body>
