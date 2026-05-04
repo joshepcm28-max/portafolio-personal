@@ -3,36 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portafolio de Joshep Emerson Condori Moreno</title>
+    <title>Portafolio - Joshep Condori</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            opacity: 0.8;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #2a5298;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #1e3c72;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.7;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Bienvenido a mi Portafolio</h1>
-        <p>Nombre: Joshep Emerson Condori Moreno</p>
-        <p>Código: S03785C</p>
-        <p>Universidad: UPLA</p>
-        <p>Introducción: Soy estudiante de Ingeniería en Sistemas y Computación.</p>
-    </header>
-    <main>
-        <h2>Tareas por Semana</h2>
-        <section>
-            <h3>Unidad 1</h3>
-            <ul>
-                <li>Semana 1: Apache Maven y Git/GitHub</li>
-                <li>Semana 2: Métodos</li>
-                <li>Semana 3: Programación Orientada a Objetos</li>
-                <li>Semana 4: Programación Orientada a Objetos</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Unidad 2</h3>
-            <ul>
-                <li>Semana 5: Componentes de una Aplicación</li>
-                <li>Semana 6: (detalles específicos)</li>
-                <li>Semana 7: (detalles específicos)</li>
-                <li>Semana 8: (detalles específicos)</li>
-            </ul>
-        </section>
-    </main>
+
+<header>
+    <h1>Joshep Emerson Condori Moreno</h1>
+    <p>Código: S03785C</p>
+    <p>Ingeniería de Sistemas y Computación - UPLA</p>
+    <p><i>Desarrollador en formación | Apasionado por la tecnología</i></p>
+</header>
+
+<div class="container">
+
+    <!-- SOBRE MI -->
+    <div class="card">
+        <h2>👨‍💻 Sobre mí</h2>
+        <p>
+            Soy estudiante de Ingeniería de Sistemas y Computación en la UPLA, 
+            interesado en el desarrollo de software, programación orientada a objetos 
+            y tecnologías modernas. Busco constantemente mejorar mis habilidades 
+            y construir soluciones innovadoras.
+        </p>
+    </div>
+
+    <!-- UNIDAD 1 -->
+    <h2>📦 Unidad 1</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Semana 1</h3>
+            <p>Apache Maven y Git/GitHub</p>
+            <a href="Unidad1/Semana1/tarea_semana_1.pdf" class="btn">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Semana 2</h3>
+            <p>Métodos</p>
+            <a href="Unidad1/Semana2/tarea_semana_2.pdf" class="btn">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Semana 3</h3>
+            <p>Programación Orientada a Objetos</p>
+            <a href="Unidad1/Semana3/tarea_semana_3.pdf" class="btn">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Semana 4</h3>
+            <p>Programación Orientada a Objetos</p>
+            <a href="Unidad1/Semana4/tarea_semana_4.pdf" class="btn">Ver PDF</a>
+        </div>
+
+    </div>
+
+    <!-- UNIDAD 2 -->
+    <h2>📦 Unidad 2</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Semana 5</h3>
+            <p>Componentes de una Aplicación</p>
+            <a href="Unidad2/Semana5/tarea_semana_5.pdf" class="btn">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Semana 6</h3>
+            <p>Componentes de una Aplicación</p>
+            <a href="Unidad2/Semana6/tarea_semana_6.pdf" class="btn">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Semana 7</h3>
+            <p>Componentes de una Aplicación</p>
+            <a href="Unidad2/Semana7/tarea_semana_7.pdf" class="btn">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Semana 8</h3>
+            <p>Componentes de una Aplicación</p>
+            <a href="Unidad2/Semana8/tarea_semana_8.pdf" class="btn">Ver PDF</a>
+        </div>
+
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="card">
+        <h2>📬 Contacto</h2>
+        <p>Email: tucorreo@gmail.com</p>
+        <p>GitHub: github.com/tuusuario</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 - Portafolio Profesional
+</footer>
+
 </body>
 </html>
