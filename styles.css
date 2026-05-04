@@ -150,3 +150,10 @@ footer {
         font-size: 2rem;
     }
 }
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons .btn {
+    margin: 5px;
+}
