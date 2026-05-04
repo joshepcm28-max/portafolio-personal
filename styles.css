@@ -1,58 +1,64 @@
 body {
     margin: 0;
     font-family: 'Segoe UI';
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-}
-
-/* CENTRADO TOTAL */
-.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* CARD PRINCIPAL */
-.card {
-    background: #020617;
-    padding: 40px;
-    border-radius: 20px;
-    width: 400px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    animation: fadeIn 1s ease;
-}
-
-/* TITULOS */
-h1 {
-    margin-bottom: 10px;
-}
-
-p {
-    opacity: 0.8;
-}
-
-/* BOTONES */
-.buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    background: #38bdf8;
+    background: #0f172a;
     color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #020617;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #1e293b;
+    border-radius: 8px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.sidebar li:hover {
+    background: #38bdf8;
+}
+
+/* CONTENIDO */
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* CARD */
+.card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: white;
+    text-decoration: none;
 }
 
 .upload {
@@ -60,25 +66,9 @@ p {
 }
 
 /* LISTA */
-.archivos {
-    margin-top: 20px;
-    text-align: left;
-}
-
-.archivos ul {
-    padding: 0;
-    list-style: none;
-}
-
 .archivos li {
     background: #1e293b;
     margin: 5px 0;
     padding: 8px;
     border-radius: 5px;
-}
-
-/* ANIMACION */
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
 }
