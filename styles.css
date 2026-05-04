@@ -49,9 +49,9 @@ body {
 
 /* CONTENEDOR */
 .container {
-    width: 90%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0 auto; /* CENTRADO REAL */
+    padding: 20px;
 }
 
 /* TITULOS */
@@ -142,18 +142,4 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-}
-.buttons {
-    margin-top: 10px;
-}
-
-.buttons .btn {
-    margin: 5px;
 }
