@@ -1,24 +1,20 @@
-# portafolio-personal
-Portafolio Personal - Joshep Emerson Condori Moreno - UPLA
-# Portfolio of Joshep Emerson Condori Moreno
+# Bienvenido a mi portafolio
 
-Welcome to my portfolio! This repository contains my work and projects as part of my academic journey.
+## Joshep Emerson Condori Moreno
 
-## Instructions for Uploading PDF Files
-1. Create a new branch for your week (e.g., `week-1`, `week-2`, etc.).
-2. Prepare your PDF file and place it in the appropriate folder for the unit.
-3. Push your changes to the branch you created.
-4. Create a pull request to merge your changes into the main branch.
+Código: S03785C  
+Universidad: UPLA  
 
-## Structure of the Units
-### Unit 1
-- Week 1: Introduction to Programming
-- Week 2: Basic Data Types
-- Week 3: Control Structures
+### Introducción
+Soy estudiante de Ingeniería de Sistemas y Computación.
 
-### Unit 2
-- Week 1: Object-Oriented Programming
-- Week 2: Advanced Data Structures
-- Week 3: Algorithm Efficiency
+## Unidad 1 (Semanas 1-4)
+- **Apache Maven y Git/GitHub**
+- **Métodos**
+- **Programación Orientada a Objetos**
 
-Feel free to reach out if you have any questions or need assistance!
+## Unidad 2 (Semanas 5-8)
+- **Componentes de una Aplicación**
+
+### Instrucciones para la carga de archivos PDF
+Para cada tarea semanal, puedes subir los archivos en formato PDF. Asegúrate de que cada archivo esté nombrado como `tarea_semana_X.pdf`, donde `X` es el número de la semana correspondiente.
