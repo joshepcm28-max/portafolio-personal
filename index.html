@@ -1,3 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Portafolio - Joshep</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TARJETAS */
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background: #38bdf8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.upload {
+    background: #22c55e;
+}
+
+/* LISTA */
+.archivos {
+    margin-top: 10px;
+    background: #020617;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.archivos li {
+    margin: 5px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
 <h1>Bienvenido a mi portafolio</h1>
 
 <p><strong>Joshep Emerson Condori Moreno</strong></p>
@@ -8,46 +75,127 @@
 <p>Soy estudiante de Ingeniería de Sistemas y Computación.</p>
 
 <h2>Unidad 1 (Semanas 1-4)</h2>
-<ul>
-    <li>
-        Semana 1: Apache Maven y Git/GitHub
-        <a href="Unidad1/Semana1/tarea_semana_1.pdf">Ver PDF</a>
-    </li>
-    <li>
-        Semana 2: Métodos
-        <a href="Unidad1/Semana2/tarea_semana_2.pdf">Ver PDF</a>
-    </li>
-    <li>
-        Semana 3: Programación Orientada a Objetos
-        <a href="Unidad1/Semana3/tarea_semana_3.pdf">Ver PDF</a>
-    </li>
-    <li>
-        Semana 4: Programación Orientada a Objetos
-        <a href="Unidad1/Semana4/tarea_semana_4.pdf">Ver PDF</a>
-    </li>
-</ul>
+
+<div class="card">
+    <h3>Semana 1: Apache Maven y Git/GitHub</h3>
+
+    <a href="Unidad1/Semana1/tarea_semana_1.pdf" target="_blank" class="btn">👁️ Ver</a>
+    <a href="Unidad1/Semana1/tarea_semana_1.pdf" download class="btn">⬇️ Descargar</a>
+    <button onclick="subirArchivo(1)" class="btn upload">📤 Subir</button>
+
+    <div class="archivos">
+        <strong>Mis entregas:</strong>
+        <ul id="lista1"></ul>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Semana 2: Métodos</h3>
+
+    <a href="Unidad1/Semana2/tarea_semana_2.pdf" target="_blank" class="btn">👁️ Ver</a>
+    <a href="Unidad1/Semana2/tarea_semana_2.pdf" download class="btn">⬇️ Descargar</a>
+    <button onclick="subirArchivo(2)" class="btn upload">📤 Subir</button>
+
+    <ul id="lista2"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 3: POO</h3>
+
+    <a href="Unidad1/Semana3/tarea_semana_3.pdf" target="_blank" class="btn">👁️ Ver</a>
+    <a href="Unidad1/Semana3/tarea_semana_3.pdf" download class="btn">⬇️ Descargar</a>
+    <button onclick="subirArchivo(3)" class="btn upload">📤 Subir</button>
+
+    <ul id="lista3"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 4: POO</h3>
+
+    <a href="Unidad1/Semana4/tarea_semana_4.pdf" target="_blank" class="btn">👁️ Ver</a>
+    <a href="Unidad1/Semana4/tarea_semana_4.pdf" download class="btn">⬇️ Descargar</a>
+    <button onclick="subirArchivo(4)" class="btn upload">📤 Subir</button>
+
+    <ul id="lista4"></ul>
+</div>
 
 <h2>Unidad 2 (Semanas 5-8)</h2>
-<ul>
-    <li>
-        Semana 5: Componentes de una Aplicación
-        <a href="Unidad2/Semana5/tarea_semana_5.pdf">Ver PDF</a>
-    </li>
-    <li>
-        Semana 6
-        <a href="Unidad2/Semana6/tarea_semana_6.pdf">Ver PDF</a>
-    </li>
-    <li>
-        Semana 7
-        <a href="Unidad2/Semana7/tarea_semana_7.pdf">Ver PDF</a>
-    </li>
-    <li>
-        Semana 8
-        <a href="Unidad2/Semana8/tarea_semana_8.pdf">Ver PDF</a>
-    </li>
-</ul>
+
+<div class="card">
+    <h3>Semana 5</h3>
+    <a href="Unidad2/Semana5/tarea_semana_5.pdf" target="_blank" class="btn">Ver</a>
+    <a href="Unidad2/Semana5/tarea_semana_5.pdf" download class="btn">Descargar</a>
+    <button onclick="subirArchivo(5)" class="btn upload">Subir</button>
+    <ul id="lista5"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 6</h3>
+    <a href="Unidad2/Semana6/tarea_semana_6.pdf" target="_blank" class="btn">Ver</a>
+    <a href="Unidad2/Semana6/tarea_semana_6.pdf" download class="btn">Descargar</a>
+    <button onclick="subirArchivo(6)" class="btn upload">Subir</button>
+    <ul id="lista6"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 7</h3>
+    <a href="Unidad2/Semana7/tarea_semana_7.pdf" target="_blank" class="btn">Ver</a>
+    <a href="Unidad2/Semana7/tarea_semana_7.pdf" download class="btn">Descargar</a>
+    <button onclick="subirArchivo(7)" class="btn upload">Subir</button>
+    <ul id="lista7"></ul>
+</div>
+
+<div class="card">
+    <h3>Semana 8</h3>
+    <a href="Unidad2/Semana8/tarea_semana_8.pdf" target="_blank" class="btn">Ver</a>
+    <a href="Unidad2/Semana8/tarea_semana_8.pdf" download class="btn">Descargar</a>
+    <button onclick="subirArchivo(8)" class="btn upload">Subir</button>
+    <ul id="lista8"></ul>
+</div>
 
 <h2>Instrucciones</h2>
-<p>
-Sube tus archivos como: <strong>tarea_semana_X.pdf</strong>
-</p>
+<p>Sube tus archivos como: <strong>tarea_semana_X.pdf</strong></p>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    for (let i = 1; i <= 8; i++) {
+        mostrarArchivos(i);
+    }
+});
+
+function subirArchivo(semana) {
+    const input = document.createElement("input");
+    input.type = "file";
+
+    input.onchange = e => {
+        const archivo = e.target.files[0];
+
+        if (archivo) {
+            let archivos = JSON.parse(localStorage.getItem("semana" + semana)) || [];
+            archivos.push(archivo.name);
+            localStorage.setItem("semana" + semana, JSON.stringify(archivos));
+            mostrarArchivos(semana);
+        }
+    };
+
+    input.click();
+}
+
+function mostrarArchivos(semana) {
+    const lista = document.getElementById("lista" + semana);
+    lista.innerHTML = "";
+
+    let archivos = JSON.parse(localStorage.getItem("semana" + semana)) || [];
+
+    archivos.forEach(nombre => {
+        let li = document.createElement("li");
+        li.textContent = "📄 " + nombre;
+        lista.appendChild(li);
+    });
+}
+</script>
+
+</body>
+</html>
