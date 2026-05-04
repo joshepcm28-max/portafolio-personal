@@ -3,36 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Joshep Emerson Condori Moreno</title>
+    <title>Reloj Mundial y Navegación</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; text-align: center; }
+        .nav { margin: 20px 0; }
+        button { cursor: pointer; }
+        .clock { margin: 10px 0; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi Portafolio</h1>
-        <p>Nombre: Joshep Emerson Condori Moreno</p>
-        <p>Código: S03785C</p>
-        <p>Universidad: UPLA</p>
-        <p>Introducción: Soy estudiante de Ingeniería en Sistemas y Computación.</p>
-    </header>
-    <main>
-        <h2>Tareas por Semana</h2>
-        <section>
-            <h3>Unidad 1</h3>
-            <ul>
-                <li>Semana 1: Apache Maven y Git/GitHub</li>
-                <li>Semana 2: Métodos</li>
-                <li>Semana 3: Programación Orientada a Objetos</li>
-                <li>Semana 4: Programación Orientada a Objetos</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Unidad 2</h3>
-            <ul>
-                <li>Semana 5: Componentes de una Aplicación</li>
-                <li>Semana 6: (detalles específicos)</li>
-                <li>Semana 7: (detalles específicos)</li>
-                <li>Semana 8: (detalles específicos)</li>
-            </ul>
-        </section>
-    </main>
+    <div class="container">
+        <h1>Reloj Mundial</h1>
+        <div class="nav">
+            <button onclick="showSection('clock')">Reloj</button>
+            <button onclick="showSection('tasks')">Tareas</button>
+        </div>
+        
+        <div id="clock" class="clock">
+            <p>Lima (Perú): <span id="lima"></span></p>
+            <p>Nueva York: <span id="newYork"></span></p>
+            <p>Londres: <span id="london"></span></p>
+            <p>Tokio: <span id="tokyo"></span></p>
+            <p>Sídney: <span id="sydney"></span></p>
+            <p>Dubái: <span id="dubai"></span></p>
+        </div>
+        
+        <div id="tasks" style="display:none;">
+            <h2>Tus Tareas</h2>
+            <p>Aquí puedes gestionar tus tareas.</p>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const options = { timeZone: 'America/Lima', hour12: false, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            document.getElementById('lima').innerHTML = new Intl.DateTimeFormat('es-PE', options).format(new Date());
+
+            options.timeZone = 'America/New_York';
+            document.getElementById('newYork').innerHTML = new Intl.DateTimeFormat('es-US', options).format(new Date());
+
+            options.timeZone = 'Europe/London';
+            document.getElementById('london').innerHTML = new Intl.DateTimeFormat('es-GB', options).format(new Date());
+
+            options.timeZone = 'Asia/Tokyo';
+            document.getElementById('tokyo').innerHTML = new Intl.DateTimeFormat('ja-JP', options).format(new Date());
+
+            options.timeZone = 'Australia/Sydney';
+            document.getElementById('sydney').innerHTML = new Intl.DateTimeFormat('en-AU', options).format(new Date());
+
+            options.timeZone = 'Asia/Dubai';
+            document.getElementById('dubai').innerHTML = new Intl.DateTimeFormat('es-AE', options).format(new Date());
+        }
+
+        function showSection(section) {
+            document.getElementById('clock').style.display = section === 'clock' ? 'block' : 'none';
+            document.getElementById('tasks').style.display = section === 'tasks' ? 'block' : 'none';
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call
+    </script>
 </body>
+</html>
+
 </html>
